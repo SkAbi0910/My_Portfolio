@@ -3,24 +3,24 @@ import Project from "../models/Project.js";
 
 const router = express.Router();
 
-const projects = [
-    {
-        id:1,
-        title: "School Management System",
-        description:"A full-stack system for managing classes, students and teachers.",
-        tech: ["Laravel","React","MySQL","TailwindCSS"],
-        github:"",
-        demo :"",
-    },
-    {
-        id:2,
-        title: "Todo App",
-        description:"Simple CRUD Todo app with MERN stack.",
-        tech: ["MongoDB","Express","React","Node.js","TailwindCSS"],
-        github:"",
-        demo :"",
-    },
-]
+// const projects = [
+//     {
+//         id:1,
+//         title: "School Management System",
+//         description:"A full-stack system for managing classes, students and teachers.",
+//         tech: ["Laravel","React","MySQL","TailwindCSS"],
+//         github:"",
+//         demo :"",
+//     },
+//     {
+//         id:2,
+//         title: "Todo App",
+//         description:"Simple CRUD Todo app with MERN stack.",
+//         tech: ["MongoDB","Express","React","Node.js","TailwindCSS"],
+//         github:"",
+//         demo :"",
+//     },
+// ]
 
 router.get("/", async (req,res) => {
     try{

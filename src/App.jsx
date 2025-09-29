@@ -1,3 +1,7 @@
+import Projects from "./components/Projects";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+
 function App(){
   return(
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -6,7 +10,7 @@ function App(){
           <h1 className="text-2xl font-bold text-indigo-600">My Portfolio</h1>
           <ul className="flex gap-6">
             <li><a href="#about" className="hover:text-indigo-600">About</a></li>
-            <li><a href="#skillst" className="hover:text-indigo-600">Skills</a></li>
+            <li><a href="#skills" className="hover:text-indigo-600">Skills</a></li>
             <li><a href="#projects" className="hover:text-indigo-600">Projects</a></li>
             <li><a href="#experience" className="hover:text-indigo-600">Experience</a></li>
             <li><a href="#blog" className="hover:text-indigo-600">Blog</a></li>
@@ -23,23 +27,45 @@ function App(){
 
       <section id="about" className="max-w-6xl mx-auto py-16 px-6">
         <h3 className="text-3xl font-bold mb-6">About Me</h3>
-        <p className="text-gray-700">I am a passionate MERN stack developer who loves building scalable, user-friendly web applications.</p>
+      <p className="text-gray-700">
+  I am a dedicated MERN stack developer with a strong passion for creating scalable, efficient, and user-friendly web applications. I enjoy transforming ideas into full-fledged digital solutions, with expertise in building modern frontends, robust backends, and seamless database integrations. Always eager to learn and grow, I thrive on solving real-world problems through clean code, optimized performance, and innovative design.
+</p>
+
       </section>
 
       <section id="skills" className="bg-gray-100 py-16 px-6">
-        <h3 className="text-3xl font-bold mb-6 text-center">Skills</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          <div className="p-4 bg-white rounded-xl shadow text-center">React</div>
-          <div className="p-4 bg-white rounded-xl shadow text-center">Node.js</div>
-          <div className="p-4 bg-white rounded-xl shadow text-center">Express</div>
-          <div className="p-4 bg-white rounded-xl shadow text-center">MongoDB</div>
-        </div>
-      </section>
+  <h3 className="text-3xl font-bold mb-6 text-center">Skills</h3>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+    {/* Frontend */}
+    <div className="p-4 bg-white rounded-xl shadow text-center">React</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">JavaScript (ES6+)</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">HTML5 & CSS3</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Tailwind CSS</div>
 
-      <section id="projects" className="max-w-6xl mx-auto py-16 px-6">
-        <h3 className="text-3xl font-bold mb-6">Projects</h3>
-        <p className="text-gray-700">Projects will be dynamically loaded here.</p>
-      </section>
+    {/* Backend */}
+    <div className="p-4 bg-white rounded-xl shadow text-center">Node.js</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Express.js</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Laravel (PHP)</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">RESTful APIs</div>
+
+    {/* Database */}
+    <div className="p-4 bg-white rounded-xl shadow text-center">MongoDB</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">MySQL</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Java</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Database Design</div>
+
+    {/* Tools & Others */}
+    <div className="p-4 bg-white rounded-xl shadow text-center">Git & GitHub</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">JWT Authentication</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Cloud Deployment (AWS, Firebase)</div>
+    <div className="p-4 bg-white rounded-xl shadow text-center">Problem Solving (DSA, HackerRank)</div>
+  </div>
+</section>
+
+
+      <Projects/>
+      <Blog/>
+      <Contact/>
 
       <footer className="bg-indigo-600 text-white py-6 text-center mt-10">
         {new Date().getFullYear()} Abinaya | MERN Developer
